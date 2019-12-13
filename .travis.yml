@@ -9,7 +9,7 @@ rvm:
 notifications:
   email:
     recipients:
-    - sensu-plugin@sensu-plugins.io	
+    - beto.rvs@gmail.com
     on_success: change
     on_failure: always
 script:
@@ -28,9 +28,9 @@ deploy:
     all_branches: true
     rvm: 2.3.0
     rvm: 2.4.1
-    repo: sensu-plugins/sensu-plugins-ssl
+    repo: betorvs/sensu-plugins-ssl
 - provider: script
-  script: bonsai/ruby-runtime/travis-build-bonsai-assets.sh sensu-plugins-ssl
+  script: bonsai/ruby-runtime/travis-build-ruby-plugin-assets.sh sensu-plugins-ssl
   skip_cleanup: true
   on:
     tags: true
