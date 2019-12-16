@@ -20,7 +20,6 @@ before_deploy:
 - bash -c "[ ! -d bonsai/ ] && git clone https://github.com/sensu/sensu-go-bonsai-asset.git
   bonsai || echo 'bonsai/ exists, skipping git clone'"
 deploy:
-  matrix:
   - provider: rubygems
     api_key:
       secure: lMYklliybUgxNhwA/RCmH5TzfDFPYqurjLyEVXiYghKgrB8fIOo1Kyc5fsvx9mOXtIj3CDifVMuKqLugjtUe/je4g5ujmk7Sr37tzBqAyNdC212R5ftT6Nr8nIB1pp1TCDDSEHqH1T/brWrDzpHipZXxWrk0QlhU5r+U8BDogaFnxpgm5Jcr4MdL4n4nzBR/8PK7jpreqlDoQ51VntXNjKPbEfBw59SnCJccAzFthsSIEg+6DOuU3iVBkoLLMy25p9DTqJXou8YzyMh7fTGjc1AoWfhuvU1UCdG0FXDemrm6gQUCe293aOm3txISC1ZZ0K6Tzfm9+1cZD+8Dp0sI692UpuqtHFS07om7k31pWJNDAhkG74zgbMHELXwhnJoZkNVCElvNsXr50DL/BuesAU1GDNHDYEr9dbghMYZjpzjf6puQA5PwrKJoQ7xTAHcLWaNDG0QgjWIfznHaWk5mEFElm+bi7cDKG3A4vebXX29u+EeAu39hXHBVVT1HGRPi/41JvOWTolIk4EMf+J5jdzOhCXAK52eIlwzHjWmamLoWWARVw0Eo/oEc5XB7GzU9Xc6e81UgxzreKR3AHIYBQHmF+nTc4jBzVhL+Zswe+BBO9hrrqU6TaJkQklIDlAV8exPq3ZmFlMhv087Oi3TRApX7U2u3b0t5TpbQz0vB4ME=
