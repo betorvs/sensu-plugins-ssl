@@ -8,7 +8,7 @@ require 'yard/rake/yardoc_task'
 
 ENV['TZ'] = 'CET'
 
-args = %i[:spec, :make_bin_executable, :yard, :rubocop, :check_binstubs]
+args = %i[spec make_bin_executable yard rubocop check_binstubs]
 
 YARD::Rake::YardocTask.new do |t|
   OTHER_PATHS = %w[].freeze
