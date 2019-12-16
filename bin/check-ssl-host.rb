@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
-# 
+#
 #  check-ssl-host.rb
-
+#
 # DESCRIPTION:
 #   SSL certificate checker
 #   Connects to a HTTPS (or other SSL) server and performs several checks on

@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
-# 
+#
 #  check-ssl-hsts-preloadable.rb
-
+#
 # DESCRIPTION:
 #   Checks a domain against the chromium HSTS API returning errors/warnings if the domain is preloadable
 #
