@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
-# encoding: UTF-8
+# 
 #  check-ssl-hsts-preloadable.rb
-#
+
 # DESCRIPTION:
 #   Checks a domain against the chromium HSTS API returning errors/warnings if the domain is preloadable
 #
@@ -43,7 +43,7 @@ class CheckSSLHSTSPreloadable < Sensu::Plugin::Check::CLI
          default: 'https://hstspreload.org/api/v2/preloadable'
 
   def fetch(uri, limit = 10)
-    if limit == 0
+    if limit.zero?
       return nil
     end
 

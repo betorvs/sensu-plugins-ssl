@@ -31,3 +31,9 @@ Style/Documentation:
 
 # AllCops:
 #   TargetRubyVersion: 2.0
+Metrics/BlockLength:
+  Exclude:
+    - 'Rakefile'
+    - '**/*.rake'
+    - 'test/*.rb'
+    - sensu-plugins-ssl.gemspec

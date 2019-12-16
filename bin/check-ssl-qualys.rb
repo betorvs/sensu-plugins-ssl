@@ -1,8 +1,7 @@
 #!/usr/bin/env ruby
-# encoding: UTF-8
-
+# 
 #  check-ssl-qualys.rb
-#
+
 # DESCRIPTION:
 #   Runs a report using the Qualys SSL Labs API and then alerts if a
 #   domain does not meet the grade specified for *ALL* hosts that are
