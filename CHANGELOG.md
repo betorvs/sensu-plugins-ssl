@@ -11,6 +11,12 @@ This CHANGELOG follows the format listed [here](https://github.com/sensu-plugins
 - Travis build automation to generate Sensu Asset tarballs that can be used n conjunction with Sensu provided ruby runtime assets and the Bonsai Asset Index
 - Require latest sensu-plugin for [Sensu Go support](https://github.com/sensu-plugins/sensu-plugin#sensu-go-enablement)
 
+## [4.0.1] - 2019-12-16
+### Fixed
+- Could not find gem bundler (~> 1.7)
+- disabled one test in test/check-ssl-hsts-preloadable_spec.rb
+
+
 ## [2.0.1] - 2018-05-30
 ### Fixed
 - `check-ssl-qualys.rb`: Fixed typo and removed timeout `-t` short option replacing it with `--timeout` as per previous changelog. `-t` conflicts with the short option for `--time-between`
